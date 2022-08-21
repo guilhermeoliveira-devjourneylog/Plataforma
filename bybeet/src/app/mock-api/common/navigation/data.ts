@@ -2,20 +2,20 @@
 import { FuseNavigationItem } from '@fuse/components/navigation';
 
 export const defaultNavigation: FuseNavigationItem[] = [
-    {
+    /*{
         id      : 'dashboards',
         title   : 'Dashboards',
         subtitle: 'Unique dashboard designs',
         type    : 'group',
         icon    : 'heroicons_outline:home',
         children: [
-            /*{
+            {
                 id   : 'dashboards.project',
                 title: 'Project',
                 type : 'basic',
                 icon : 'heroicons_outline:clipboard-check',
                 link : '/dashboards/project'
-            },*/
+            },
             {
                 id   : 'dashboards.analytics',
                 title: 'Analytics',
@@ -30,15 +30,15 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 icon : 'heroicons_outline:cash',
                 link : '/dashboards/finance'
             },
-            /*{
+            {
                 id   : 'dashboards.crypto',
                 title: 'Crypto',
                 type : 'basic',
                 icon : 'heroicons_outline:currency-dollar',
                 link : '/dashboards/crypto'
-            }*/
+            }
         ]
-    },
+    },*/
     {
         id      : 'apps',
         title   : 'Applications',
@@ -170,7 +170,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 icon : 'heroicons_outline:menu-alt-2',
                 link : '/pages/activities'
             },*/
-            {
+            /*{
                 id      : 'pages.authentication',
                 title   : 'Authentication',
                 type    : 'collapsable',
@@ -526,7 +526,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                         ]
                     }
                 ]
-            },
+            },*/
             {
                 id      : 'pages.coming-soon',
                 title   : 'Coming Soon',
@@ -534,7 +534,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 icon    : 'heroicons_outline:clock',
                 link    : '/pages/coming-soon',
                 children: [
-                    {
+                    /*{
                         id   : 'pages.coming-soon.classic',
                         title: 'Classic',
                         type : 'basic',
@@ -563,19 +563,19 @@ export const defaultNavigation: FuseNavigationItem[] = [
                         title: 'Split Screen Reversed',
                         type : 'basic',
                         link : '/pages/coming-soon/split-screen-reversed'
-                    },
+                    },*/
                     {
                         id   : 'pages.coming-soon.fullscreen',
                         title: 'Fullscreen',
                         type : 'basic',
                         link : '/pages/coming-soon/fullscreen'
                     },
-                    {
+                    /*{
                         id   : 'pages.coming-soon.fullscreen-reversed',
                         title: 'Fullscreen Reversed',
                         type : 'basic',
                         link : '/pages/coming-soon/fullscreen-reversed'
-                    }
+                    }*/
                 ]
             },
             {
@@ -680,7 +680,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
             }
         ]
     },
-    {
+    /*{
         id      : 'user-interface',
         title   : 'User Interface',
         subtitle: 'Building blocks of the UI & UX',
@@ -954,7 +954,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 link : '/ui/typography'
             }
         ]
-    },
+    },*/
     {
         id  : 'divider-1',
         type: 'divider'
@@ -966,7 +966,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
         type    : 'group',
         icon    : 'heroicons_outline:support',
         children: [
-            {
+            /*{
                 id   : 'documentation.changelog',
                 title: 'Changelog',
                 type : 'basic',
@@ -976,7 +976,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                     title  : '14.2.0',
                     classes: 'px-2 bg-yellow-300 text-black rounded-full'
                 }
-            },
+            },*/
             {
                 id   : 'documentation.guides',
                 title: 'Guides',
@@ -986,7 +986,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
             }
         ]
     },
-    {
+    /*{
         id  : 'divider-2',
         type: 'divider'
     },
@@ -1142,7 +1142,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 type : 'basic'
             }
         ]
-    }
+    }*/
 ];
 export const compactNavigation: FuseNavigationItem[] = [
     {
