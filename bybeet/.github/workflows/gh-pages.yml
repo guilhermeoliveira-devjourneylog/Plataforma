@@ -1,0 +1,36 @@
+name: Build Github Page
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Configure Git
+        run: |
+          git config --global user.name "Ethereal"
+          git config --global user.email "ethereal97@gmail.com"
+      - name: Release Version
+        run: |
+          node bin/release-version.js
+          git add src/version
+          git commit -m "Released version $(cat src/version)"
+          git push origin master
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Github Page
+        run: |
+          rm -rf .browserslistrc .editorconfig .gitignore .angular .github bin node_modules src package.json package-lock.json angular.json tailwind.config.js transloco.config.js tsconfig.app.json tsconfig.json
+          mv dist/** .
+          cp index.html 404.html
+          rm -rf dist
+          git checkout --orphan gh-pages
+          git add --all
+          git commit -m "Commited to Github Page"
+          git push origin gh-pages --force
