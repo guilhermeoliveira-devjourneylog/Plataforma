@@ -16,7 +16,7 @@ import { InventoryService } from 'app/modules/admin/apps/ecommerce/inventory/inv
         /* language=SCSS */
         `
             .inventory-grid {
-                grid-template-columns: 48px auto 40px;
+                grid-template-columns: 144px auto 40px;
 
                 @screen sm {
                     grid-template-columns: 48px auto 112px 72px;
@@ -96,10 +96,10 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
             taxPercent       : [''],
             price            : [''],
             weight           : [''],
-            thumbnail        : [''],
+            /*thumbnail        : [''],
             images           : [[]],
             currentImageIndex: [0], // Image index that is currently being viewed
-            active           : [false]
+            active           : [false]*/
         });
 
         // Get the brands

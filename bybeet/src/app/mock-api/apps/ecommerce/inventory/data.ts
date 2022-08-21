@@ -3,20 +3,20 @@ export const categories = [
     {
         id      : 'b899ec30-b85a-40ab-bb1f-18a596d5c6de',
         parentId: null,
-        name    : 'Mens',
-        slug    : 'mens'
+        name    : 'Frutas',
+        slug    : 'frutas'
     },
     {
         id      : '07986d93-d4eb-4de1-9448-2538407f7254',
         parentId: null,
-        name    : 'Ladies',
-        slug    : 'ladies'
+        name    : 'Vegetais',
+        slug    : 'vegetais'
     },
     {
         id      : 'ad12aa94-3863-47f8-acab-a638ef02a3e9',
         parentId: null,
-        name    : 'Unisex',
-        slug    : 'unisex'
+        name    : 'Leguminosas',
+        slug    : 'leguminosas'
     }
 ];
 export const brands = [
@@ -49,43 +49,15 @@ export const brands = [
 export const tags = [
     {
         id   : '167190fa-51b4-45fc-a742-8ce1b33d24ea',
-        title: 'mens'
+        title: 'frutas'
     },
     {
         id   : '3baea410-a7d6-4916-b79a-bdce50c37f95',
-        title: 'ladies'
+        title: 'vegetais'
     },
     {
         id   : '8ec8f60d-552f-4216-9f11-462b95b1d306',
-        title: 'unisex'
-    },
-    {
-        id   : '8837b93f-388b-43cc-851d-4ca8f23f3a61',
-        title: '44mm'
-    },
-    {
-        id   : '8f868ddb-d4a2-461d-bc3b-d7c8668687c3',
-        title: '40mm'
-    },
-    {
-        id   : '2300ac48-f268-466a-b765-8b878b6e14a7',
-        title: '5 ATM'
-    },
-    {
-        id   : '0b11b742-3125-4d75-9a6f-84af7fde1969',
-        title: '10 ATM'
-    },
-    {
-        id   : '0fc39efd-f640-41f8-95a5-3f1d749df200',
-        title: 'automatic'
-    },
-    {
-        id   : '7d6dd47e-7472-4f8b-93d4-46c114c44533',
-        title: 'chronograph'
-    },
-    {
-        id   : 'b1286f3a-e2d0-4237-882b-f0efc0819ec3',
-        title: 'watch'
+        title: 'leguminosas'
     }
 ];
 export const vendors = [
